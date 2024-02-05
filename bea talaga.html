@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Flexbox Gallery</title>
+    <style>
+      header{
+        justify-content: center;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #443d3d;
+        font-family: Arial, sans-serif; /* Use a common font for better compatibility */
+      }
+  
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: auto;
+      }
+  
+      .gallery-item {
+        flex: 0 0 33.33%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-self: start;
+        justify-content: center;
+        flex-direction: column;
+      }
+  
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        transition: transform 0.3s;
+        cursor: pointer;
+      }
+  
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+  
+      .caption {
+        text-align: center;
+        margin-top: 50px;
+        color: #c5b3b3; /* Darker text for better readability */
+      }
+  
+      button {
+        color: #807b7b;
+        font-size: medium;
+        cursor: pointer;
+        background-color: #b4a2a2; /* Light background for better visibility */
+        border: none;
+        padding: 2px 2px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+  
+      button:hover {
+        background-color: #9c9a9a; /* Slightly darker background on hover */
+      }
+      h1{
+        text-align: center;
+
+      }
+    </style>
+  </head>
+  
+<body>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://c4.wallpaperflare.com/wallpaper/892/692/922/howl-s-moving-castle-studio-ghibli-fantasy-art-clouds-daylight-hd-wallpaper-preview.jpg" alt="Image 1">
+      <p class="caption">ruzz</p></br>
+      <button type="button">button</button>
+    </div>
+    <div class="gallery-item">
+      <img src="https://c4.wallpaperflare.com/wallpaper/357/54/461/my-neighbor-totoro-totoro-rain-outdoors-anime-hd-wallpaper-preview.jpg" alt="Image 2">
+      <p class="caption">rivas</p>
+      <button type="button">button</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/810/692/33/my-neighbor-totoro-studio-ghibli-totoro-wallpaper-preview.jpg" alt="Image 3">
+        <p class="caption">emman cute</p>
+        <button type="button">button</button>
+    </div>
+    <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/30/207/789/studio-ghibli-spirited-away-anime-manga-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">bejay</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/98/252/895/studio-ghibli-spirited-away-anime-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">chicken</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/313/323/578/studio-ghibli-howl-s-moving-castle-anime-howl-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">roarrr</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/714/916/980/studio-ghibli-howl-s-moving-castle-anime-movies-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">wtq</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/320/119/781/studio-ghibli-anime-hauru-no-ugoku-shiro-howl-s-moving-castle-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">ey</p>
+        <button type="button">button</button>
+    </div>
+      <div class="gallery-item">
+        <img src="https://c4.wallpaperflare.com/wallpaper/556/593/206/spirted-away-anime-spirited-away-studio-ghibli-wallpaper-preview.jpg" alt="Image 1">
+        <p class="caption">uwu</p>
+        <button type="button">button</button>
+    </div>
+  </div>
+
+</body>
+</html>
